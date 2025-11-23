@@ -1,0 +1,62 @@
+<div class="flex items-center gap-1 p-3">
+  <div class="span-1 w-full border border-blue-400">
+    <p-tabs lazy value="1">
+      <div class="flex items-center justify-between border-b border-gray-200 pb-2 mb-3 px-3">
+        <div>
+          <p-tablist>
+            <p-tab value="0">
+              <span class="material-icons text-purple-600" style="font-size: 15px">home</span>
+            </p-tab>
+            <p-tab value="1">All Emails</p-tab>
+            <p-tab value="2" class="flex items-center">
+              Unsorted
+              <span
+                class="inline-flex items-center justify-center text-[10px] w-4 h-4 rounded-full bg-red-500 text-white"
+              >
+                2
+              </span>
+            </p-tab>
+          </p-tablist>
+        </div>
+
+        <div class="flex items-center gap-3 mr-3">
+          <input type="text" placeholder="Search Email" class="border border-gray-300 px-2 py-1 rounded-full focus:bg-gray-100 focus:outline-none duration-300" />
+
+          <button
+            class="flex items-center gap-0.5 btn border border-gray-300 bg-gray-200 px-2 py-1 rounded-lg cursor-pointer"
+          >
+            <span class="material-icons text-sm" style="font-size: 15px">filter_alt</span>Filter
+          </button>
+
+          <button
+            class="flex items-center gap-0.5 btn bg-blue-400 px-2 py-1 rounded-lg cursor-pointer text-white"
+          >
+            New Email
+          </button>
+        </div>
+      </div>
+
+      <p-tabpanels>
+        <p-tabpanel value="0">
+          <p class="m-0">home content</p>
+        </p-tabpanel>
+        <p-tabpanel value="1">
+          <p class="m-0">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+            sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+            voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius modi.
+          </p>
+        </p-tabpanel>
+        <p-tabpanel value="2">
+          <ng-template #content
+            >Complex components that should only be initialized when the tab becomes
+            active</ng-template
+          >
+        </p-tabpanel>
+      </p-tabpanels>
+    </p-tabs>
+  </div>
+  <div class="span-1 w-full border border-red-500">section 2</div>
+</div>
